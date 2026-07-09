@@ -1,0 +1,61 @@
+# Build output
+bin/
+obj/
+out/
+*.dll
+*.pdb
+*.exe
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.userprefs
+
+# VS Code
+.vscode/
+
+# NuGet
+*.nupkg
+*.snupkg
+packages/
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# ASP.NET Core
+launchSettings.local.json
+appsettings.*.local.json
+
+# Uncomment to keep dev secrets out of git (recommended — use dotnet user-secrets instead).
+# appsettings.Development.json
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.coverage
+*.coveragexml
+coverage*.json
+coverage*.xml
+coverage*.info
+TestResults/
+
+# Logs
+*.log
+logs/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Secrets — never commit
+*.pfx
+*.key
+secrets.json
+.env
+.env.local
