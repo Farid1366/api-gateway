@@ -22,6 +22,7 @@ builder.Services
     .AddGatewayAuthentication(builder.Configuration)
     .AddGatewayAuthorization()
     .AddGatewayRateLimiting()
+    .AddGatewayOutputCache()
     .AddGatewayReverseProxy(builder.Configuration)
     .AddGatewayOpenApi(builder.Configuration, builder.Environment);
 
@@ -35,6 +36,8 @@ app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseRateLimiter();
+
+app.UseOutputCache();
 
 app.MapHealthChecks("/healthz");
 app.MapHealthChecks("/ready");
